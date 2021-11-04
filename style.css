@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Satisfy&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 700px;
+  height: 400px;
+  background-color: #4699fa;
+  border-radius:5px;
+  box-shadow: 1px 1px 10px 2px #252525;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.quoteIconT{
+  color:rgba(43, 43, 43, 0.338);
+  font-size:80px;
+  z-index: -3;
+  position: absolute;
+  left:10px;
+  top:30px;
+}
+.quoteIconB{
+  color:rgba(43, 43, 43, 0.338);
+  font-size:80px;
+  z-index: -3;
+  position: absolute;
+  right:10px;
+  bottom:25px;
+}
+.card .content{
+  padding:0 50px;
+  z-index: 1;
+}
+.card .content #quote{
+  font-family: 'Playball', cursive;
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  font-weight:400;
+}
+.card .content #author{
+  text-align: right;
+  margin-top:5px;
+  font-weight: 600;
+  color: #fff;
+}
+.card .content #author::before{
+  content: "___ ";
+}
+#newQuote{
+  position:absolute;
+  bottom:20px;
+  padding:7px 20px;
+  font-size:20px;
+  font-weight:bold;
+  border-radius:5px;
+  border:1px solid #fff;
+  transition: all 0.5s ease ease-in-out;
+  cursor:pointer;
+}
+#newQuote i{
+  color:#000000;
+  font-size:30px;
+}
+#newQuote:hover{
+  box-shadow: 1px 1px 10px 3px #ffffff;
+}
+#newQuote:hover i{
+  color:#00ff11;
+  font-size:31px;
+}
+#tweetMe{
+  position: absolute;
+  right: 15px;
+  top:15px;
+  padding:6px 6px;
+  border-radius:50%;
+  border:1px solid #fff;
+  transition: all 0.5s ease ease-in-out;
+  cursor:pointer;
+}
+#tweetMe:hover{
+  box-shadow: 1px 1px 10px 5px #ffffff;
+  padding:5px 5px;
+}
+#tweetMe:hover i{
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+}
+#tweetMe i{
+  font-size:25px;
+  color:#1d9bf0;
+}
